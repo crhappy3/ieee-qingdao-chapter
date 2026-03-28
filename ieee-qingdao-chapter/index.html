@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IEEE Qingdao Chapter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* NAV */
+        nav {
+            background: #003366;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)),
+                        url('https://images.unsplash.com/photo-1526401485004-2aa7c1f6a7c3');
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* SECTION */
+        .container {
+            padding: 60px 80px;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        /* CARDS */
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2>IEEE Qingdao Chapter</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="officers.html">Leadership</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="join.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>IEEE Qingdao Chapter</h1>
+    <p>Advancing Technology for Humanity</p>
+</section>
+
+<!-- INTRO -->
+<section class="container">
+    <h2>About the Chapter</h2>
+    <p>
+        The IEEE Qingdao Chapter is dedicated to promoting technological innovation,
+        academic exchange, and professional development in the Qingdao region.
+        It serves as a platform for engineers, researchers, and students to collaborate
+        and contribute to the advancement of engineering and technology.
+    </p>
+</section>
+
+<!-- MISSION -->
+<section class="container">
+    <h2>Our Mission</h2>
+    <p>
+        Our mission is to advance technology for humanity by fostering collaboration,
+        supporting education, and encouraging research excellence within the global IEEE community.
+    </p>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="container">
+    <h2>Key Activities</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Academic Events</h3>
+            <p>Seminars, conferences, and lectures by experts in engineering and technology.</p>
+        </div>
+
+        <div class="card">
+            <h3>Workshops</h3>
+            <p>Hands-on training sessions on emerging technologies and tools.</p>
+        </div>
+
+        <div class="card">
+            <h3>Networking</h3>
+            <p>Connecting students, professionals, and researchers across disciplines.</p>
+        </div>
+    </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section class="container">
+    <h2>Membership</h2>
+    <p>
+        Join the IEEE Qingdao Chapter to access global resources, participate in professional
+        activities, and connect with a worldwide network of technology professionals.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 IEEE Qingdao Chapter | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
