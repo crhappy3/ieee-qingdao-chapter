@@ -12,7 +12,7 @@
             line-height: 1.6;
         }
 
-        /* NAV */
+        /* ===== NAV ===== */
         nav {
             background: #003366;
             color: white;
@@ -45,85 +45,93 @@
             text-decoration: underline;
         }
 
-        /* ===== HERO 容器 ===== */
-.hero {
-    position: relative;
-    height: 90vh;
-    overflow: hidden;
-}
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            height: 90vh;
+            overflow: hidden;
+        }
 
-/* ===== 图片层 ===== */
-.slides {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+        .slides {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
 
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
 
-    /* ⭐ 关键：不裁图 */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+            /* ⭐ 不裁图（关键） */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
 
-    opacity: 0;
-    transition: opacity 1.2s ease-in-out;
-    
-    /* ⭐ 高级感：轻微缩放 */
-    transform: scale(1.05);
-}
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
 
-/* 当前显示 */
-.slide.active {
-    opacity: 1;
-}
+            /* ⭐ 微缩放高级感 */
+            transform: scale(1.05);
+        }
 
-/* ===== IEEE风格暗蓝遮罩 ===== */
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        rgba(0, 51, 102, 0.6),
-        rgba(0, 51, 102, 0.75)
-    );
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
+        /* 本地图片 */
+        .slide:nth-child(1) {
+            background-image: url('images/bg1.jpg');
+        }
 
-/* ===== 文本层 ===== */
-.hero-text {
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-}
+        .slide:nth-child(2) {
+            background-image: url('images/bg2.jpg');
+        }
 
-/* ===== 标题（增强） ===== */
-.hero-text h1 {
-    font-size: 76px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+        .slide:nth-child(3) {
+            background-image: url('images/bg3.jpg');
+        }
 
-    /* ⭐ 高级：轻微阴影 */
-    text-shadow: 0 4px 20px rgba(0,0,0,0.4);
-}
+        .slide.active {
+            opacity: 1;
+        }
 
-/* 副标题 */
-.hero-text p {
-    font-size: 26px;
-    opacity: 0.95;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-        /* SECTION */
+        /* ===== 遮罩（IEEE蓝渐变）===== */
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                rgba(0, 51, 102, 0.6),
+                rgba(0, 51, 102, 0.75)
+            );
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* ===== HERO 文本 ===== */
+        .hero-text {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .hero-text h1 {
+            font-size: 76px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .hero-text p {
+            font-size: 26px;
+            opacity: 0.95;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        /* ===== SECTION ===== */
         .container {
             padding: 60px 80px;
         }
@@ -132,7 +140,7 @@
             color: #003366;
         }
 
-        /* CARDS */
+        /* ===== CARDS ===== */
         .cards {
             display: flex;
             gap: 20px;
@@ -146,7 +154,7 @@
             border-radius: 8px;
         }
 
-        /* FOOTER */
+        /* ===== FOOTER ===== */
         footer {
             background: #003366;
             color: white;
@@ -154,14 +162,14 @@
             padding: 20px;
         }
 
-        /* RESPONSIVE */
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .cards {
                 flex-direction: column;
             }
 
             .hero-text h1 {
-                font-size: 40px;
+                font-size: 42px;
             }
 
             .hero-text p {
@@ -201,31 +209,28 @@
     </div>
 </section>
 
-<!-- INTRO -->
+<!-- CONTENT -->
 <section class="container">
     <h2>About the Chapter</h2>
     <p>
-        The IEEE Qingdao Chapter is dedicated to promoting technological innovation
-        and academic collaboration in the region.
+        The IEEE Qingdao Chapter promotes innovation, collaboration, and academic exchange in engineering and technology.
     </p>
 </section>
 
-<!-- MISSION -->
 <section class="container">
     <h2>Our Mission</h2>
     <p>
-        To advance technology for humanity through collaboration, education, and research excellence.
+        To advance technology for humanity through education, research, and global collaboration.
     </p>
 </section>
 
-<!-- ACTIVITIES -->
 <section class="container">
     <h2>Key Activities</h2>
 
     <div class="cards">
         <div class="card">
             <h3>Academic Events</h3>
-            <p>Seminars, conferences, and expert talks.</p>
+            <p>Seminars, lectures, and conferences.</p>
         </div>
 
         <div class="card">
@@ -240,7 +245,6 @@
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <p>© 2026 IEEE Qingdao Chapter</p>
 </footer>
