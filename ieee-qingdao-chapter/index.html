@@ -24,6 +24,7 @@
 
         nav h2 {
             margin: 0;
+            font-size: 18px;
         }
 
         nav ul {
@@ -67,32 +68,35 @@
             transition: opacity 1s ease-in-out;
         }
 
+        /* ===== 本地图片（重点）===== */
         .slide:nth-child(1) {
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-image: url('images/bg1.jpg');
         }
 
         .slide:nth-child(2) {
-            background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d');
+            background-image: url('images/bg2.jpg');
         }
 
         .slide:nth-child(3) {
-            background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6');
+            background-image: url('images/bg3.jpg');
         }
 
         .slide.active {
             opacity: 1;
         }
 
+        /* 暗色遮罩 */
         .hero::after {
             content: "";
             position: absolute;
             width: 100%;
             height: 100%;
-            background: rgba(0, 51, 102, 0.6);
+            background: rgba(0, 51, 102, 0.65);
             top: 0;
             left: 0;
         }
 
+        /* HERO 文字 */
         .hero-text {
             position: relative;
             z-index: 2;
@@ -102,13 +106,17 @@
             transform: translateY(-50%);
         }
 
+        /* ===== 字体已加大 ===== */
         .hero-text h1 {
-            font-size: 40px;
+            font-size: 72px;
+            font-weight: 800;
             margin-bottom: 10px;
+            letter-spacing: 1px;
         }
 
         .hero-text p {
-            font-size: 18px;
+            font-size: 26px;
+            opacity: 0.95;
         }
 
         /* SECTION */
@@ -147,13 +155,21 @@
             .cards {
                 flex-direction: column;
             }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .hero-text p {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav>
     <h2>IEEE Qingdao Chapter</h2>
     <ul>
@@ -185,8 +201,8 @@
 <section class="container">
     <h2>About the Chapter</h2>
     <p>
-        The IEEE Qingdao Chapter is dedicated to promoting technological innovation,
-        academic exchange, and professional development in the Qingdao region.
+        The IEEE Qingdao Chapter is dedicated to promoting technological innovation
+        and academic collaboration in the region.
     </p>
 </section>
 
@@ -194,8 +210,7 @@
 <section class="container">
     <h2>Our Mission</h2>
     <p>
-        Our mission is to advance technology for humanity by fostering collaboration
-        and supporting research excellence within the IEEE community.
+        To advance technology for humanity through collaboration, education, and research excellence.
     </p>
 </section>
 
@@ -206,32 +221,24 @@
     <div class="cards">
         <div class="card">
             <h3>Academic Events</h3>
-            <p>Seminars, conferences, and lectures by experts.</p>
+            <p>Seminars, conferences, and expert talks.</p>
         </div>
 
         <div class="card">
             <h3>Workshops</h3>
-            <p>Hands-on training on emerging technologies.</p>
+            <p>Hands-on training in emerging technologies.</p>
         </div>
 
         <div class="card">
             <h3>Networking</h3>
-            <p>Connecting students and researchers worldwide.</p>
+            <p>Connecting global researchers and engineers.</p>
         </div>
     </div>
 </section>
 
-<!-- MEMBERSHIP -->
-<section class="container">
-    <h2>Membership</h2>
-    <p>
-        Join IEEE Qingdao Chapter to access global resources and professional opportunities.
-    </p>
-</section>
-
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 IEEE Qingdao Chapter | All Rights Reserved</p>
+    <p>© 2026 IEEE Qingdao Chapter</p>
 </footer>
 
 <!-- JS -->
